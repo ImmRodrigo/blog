@@ -1,0 +1,9 @@
+<% @articles.each do |article| %>
+	<h1><%=article.title%></h1>
+	<div>
+		<%= article.body %> 
+		<%= button_to "Eliminar",article, method: :delete %>
+		<%= link_to "Editar", edit_article_path(article) %>
+		<%= link_to "show", article_path(article) %>
+	</div>
+<%end%>

@@ -1,0 +1,9 @@
+<h1>
+	Bienvenido <%= 
+	if current_user != nil
+		current_user.email 
+	else
+		"A nuestro blog"
+	end
+	%> 
+</h1>
